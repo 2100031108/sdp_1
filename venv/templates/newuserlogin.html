@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<body style="background-color:lightyellow"></body>
+<div class="container">
+  <form action="/loginuser" method="post" id="lotable" name="loginform" onsubmit="return validateall()">
+        <table id="regtable2">
+            <tr>
+                <td> <input type="text" name="username" placeholder="Enter User Name" name="username" id="username" placeholder="Enter Your Name" > </td>
+            </tr>
+            <tr>
+            <td><p id="errorname"></p></td>
+            </tr>
+            <tr>
+                <td> <input type="password" name="password" id="password" placeholder="Enter Your Password" > </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Login"> </td>
+                <td> <input type="submit" value="forgot password"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+{% endblock %}
